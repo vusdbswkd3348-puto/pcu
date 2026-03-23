@@ -1,0 +1,57 @@
+<!--희망 동아리 선택(데이터리스트), 자기소개(텍스트에리어),면접가능일자(date)-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>새내기 동아리 가입 신청서</title>
+        <style>
+            html, body{margin:0; padding:0;height:100%;}
+            header{width:100%;height:15%; background:yellow;}
+            nav{width:15%;height:70%;float:left;background:orange;}
+            section{width:85%;height:70%;float:left;background:olivedrab;}
+            footer{width:100%;height:15%;clear:both;background:plum;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>동아리 가입 신청서</h1>
+            <audio src="sound/EmbraceableYou.mp3" controls loop></audio>
+        </header>
+        <nav>
+            <details>
+            <summary>동아리 리스트</summary>
+            <ol type = "A">
+                <li>애니메이션</li>
+                <li>게임</li>
+                <li>기독교</li>
+                <li>사회봉사</li>
+            </ol>
+            </details>
+        </nav>
+        <section>
+            <form action="#">
+            <label>이름 : <input type="text" placeholder="이름을 입력하세요."></label><br>
+            <label>전화번호 : <input type="text" placeholder="전화번호를 입력하세요."></label><br>
+            <label>이메일 : <input type="text" placeholder="이메일을 입력하세요."></label><br>
+            자기소개 : <textarea cols="50" rows="20"></textarea><br>
+            면접가능일자 : <input type="date" value="2026-03-26"><br>
+            면접장소 : <input type="text" list="면접장소"> 
+            <datalist id="면접장소">
+                <option value="21세기관">
+                <option value="c관">
+                <option value="기타">   
+            </datalist><br>
+            <label>기타 : <input type="text" placeholder="장소를 입력하세요."></label>
+            <br><br><br><br><br><br><br>
+            <input type="submit" value="제출">
+            </form>
+        </section>
+        <footer>
+            신청서 제출은 <input type="date" value="2026-03-30"> 까지 제출하세요.<br>
+            문의 : 게임 공학과<br>
+            2088045 편윤장<br>
+            010-5231-6135.<br>
+        </footer>
+    </body>
+</html>
